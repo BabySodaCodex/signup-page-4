@@ -16,6 +16,18 @@ sayHi();
 
 function sayBye()
 {
-console.log("Good bye")	
+console.log("Good bye");
 }
-  
+
+sayBye();
+sayBye();
+
+let nextButton = document.querySelector("#next-btn");
+let nextMeeting = document.querySelector("#next-meeting");
+
+//declare show message 
+function showNextMeeting() {
+  nextMeeting.textContent = "Our next meeting is Sunday, November 8 at 3 PM.";
+}
+
+nextButton.addEventListener("click", showNextMeeting);
