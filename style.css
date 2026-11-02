@@ -66,13 +66,17 @@ input, select, textarea {
 	width: 100%;
 	padding: 8px;
 	max-width:30rem;
-	
-	
 }
 
 button {
 	margin-top: 16px;
-	display; block;
-	
+	display: block;
+	padding: 10 px;
+	background-color: darkgreen;
+	color: white;
 }
+
+
+
+
 
