@@ -14,12 +14,13 @@
 		<p>Writing, reading, and speaking in spanish with other members every other sunday.</p>
     </header>
 	
-	<!-- My navigation links -->
+	<!-- My navigation links list -->
 	<nav>
-		<a href="#about">About</a>
-		<a href="#schedule">Schedule</a>
-		<a href="#join">Join</a>
-	
+		<ul> 
+		  <li><a href="#about">About</a></li>
+		  <li><a href="#schedule">Schedule</a></li>
+		  <li><a href="#join">Join</a></li>
+	    </ul> 
 	<!-- Main:  3 sections-->
 	<main>
 	<!-- Section 1-->
@@ -29,21 +30,43 @@
 	  </section>
 	  
 	  <!-- Section 2-->
-	  <section id="schedule">
+	  <section id="schedule" class="box">
 	  	<h2>View or club schedule</h2>
 		<p>1st and 3rd Sunday of the month</p>
 	  </section>
 	  
 	  <!-- Section 1-->
-	  <section id="join">
+	  <section id="join" class="box">
 	  	<h2>Join our club</h2>
 	    <p>Please complete the form below to join the group</p>
+		
+		<!--signup form-->
+		<form>
+		  <label for="name">Your name</label>
+		  <input type="text" id="name" name="name" required>
+		  
+		  <label for="email">Your Email</label>
+		  <input type="email" id="email" name="email" required>
+		  
+		  <label for="session">Which meeting can you attend?</label>
+		  <select id="session" name="session">
+			<option value="">Choose a meeting</option>
+			<option value="first">First Sunday</option>
+			<option value="third">Third Sunday</option>
+			<option value="both">Both Meetings</option>
+          </select>
+		  
+		  <label for="message">Any additional information</label>
+		  <textarea id="message" name="message" rows="4"></textarea>
+		  <button type="submit">Sign up</button>
+        </form>
+	  
 	  </section>
 	</main>
 	
 	 <!-- Section 1-->
     <footer>
-	<p> Created by Rhyan R</p>
+	<p> Created by BabySoda</p>
 	</footer>
     <script src="script.js"></script>
   
